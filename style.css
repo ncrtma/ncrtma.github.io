@@ -1,7 +1,11 @@
 .header
 {
-	background: url(images/bg.jpg) no-repeat 0% 0%/100% 100%;
+	background: url(images/bg.jpg) no-repeat;
+	background-position:center;
+    background-size:cover;
 	padding: 70px 0px 100px;
+	height:auto;
+	width:100%;
 }
 a
 {
@@ -26,7 +30,7 @@ a
 {
 	text-decoration: none;
 }
-.social ul li a i
+.social ul li a p
 {
 	text-align: center;
 	color: #fff;
@@ -39,14 +43,14 @@ a
 	line-height: 40px;
 	transition: all 0.3s ease-in;
 }
-.social ul li a:hover i
+.social ul li a:hover p
 {
 
 	border: 1px solid #d45544;
 }
 .main-title
 {
-	padding: 80px 0px 0px;
+	padding: 5vh 0vh 0vh;
 }
 .main-title h2
 {
@@ -68,15 +72,14 @@ a
 }
 #countdown {
     text-align: center;
-    margin: 70px 0px 60px;
-    min-height: 104px;
+    margin: 5vh 0vh 5vh;
 }
 #countdown > div {
     width: 14%;
     margin: 0px 1%;
     display: inline-block;
-    font-size: 68px;
-    line-height: 52px;
+    font-size: 8vh;
+    line-height: 5vh;
     position: relative;
     font-weight: 700;
 	color: #fff;
@@ -157,7 +160,8 @@ a
 .footer
 {
 	background-color: #3c558b;
-	padding: 70px 0px;
+	text-align:center;
+	padding-bottom:1.5%;
 }
 .footer-title h3
 {
@@ -171,7 +175,7 @@ a
 	font-family: "Roboto Slab",serif;
 	font-weight: 300;
 	font-size: 20px;
-	padding: 10px 0px 40px !important;
+	padding: 10px 0px 0px !important;
 	margin: 0 auto;
 	color: #000;
 }
@@ -248,7 +252,7 @@ a
     width: 100%;
 }
 #countdown {
-    margin: 30px 0px 45px;
+    margin: 8vh 0px 4vh;
 }
 #countdown > div {
     width: 20%;
