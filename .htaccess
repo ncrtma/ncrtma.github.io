@@ -28,5 +28,5 @@
 </IfModule>
 # 1 Month for most static assets
 <filesMatch ".(css|jpg|jpeg|png|gif|js|ico)$">
-Header set Cache-Control "max-age=86400, public"
+Header set Cache-Control "max-age=600, public"
 </filesMatch>
