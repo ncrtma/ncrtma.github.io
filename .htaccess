@@ -33,7 +33,7 @@
 
   # CSS
 
-    ExpiresByType text/css                              "access plus 1 year"
+    ExpiresByType text/css                              "access plus 600 seconds"
 
 
   # Data interchange
@@ -62,9 +62,9 @@
 
   # JavaScript
 
-    ExpiresByType application/javascript                "access plus 1 year"
-    ExpiresByType application/x-javascript              "access plus 1 year"
-    ExpiresByType text/javascript                       "access plus 1 year"
+    ExpiresByType application/javascript                "access plus 600 seconds"
+    ExpiresByType application/x-javascript              "access plus 600 seconds"
+    ExpiresByType text/javascript                       "access plus 600 seconds"
 
 
   # Manifest files
@@ -79,8 +79,8 @@
     ExpiresByType audio/ogg                             "access plus 1 week"
     ExpiresByType image/bmp                             "access plus 1 week"
     ExpiresByType image/gif                             "access plus 1 week"
-    ExpiresByType image/jpeg                            "access plus 1 week"
-    ExpiresByType image/png                             "access plus 1 week"
+    ExpiresByType image/jpeg                            "access plus 600 seconds"
+    ExpiresByType image/png                             "access plus 600 seconds"
     ExpiresByType image/svg+xml                         "access plus 1 week"
     ExpiresByType image/webp                            "access plus 1 month"
     ExpiresByType video/mp4                             "access plus 1 month"
@@ -91,8 +91,8 @@
   # Web fonts
 
     # Embedded OpenType (EOT)
-    ExpiresByType application/vnd.ms-fontobject         "access plus 1 month"
-    ExpiresByType font/eot                              "access plus 1 month"
+    ExpiresByType application/vnd.ms-fontobject         "access plus 600 seconds"
+    ExpiresByType font/eot                              "access plus 600 seconds"
 
     # OpenType
     ExpiresByType font/opentype                         "access plus 1 month"
