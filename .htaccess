@@ -1,7 +1,7 @@
 <IfModule mod_expires.c>
 
     ExpiresActive on
-    ExpiresDefault                                      "access plus 600 seconds"
+    ExpiresDefault                                      "access plus 1 month"
 
   # CSS
 
@@ -34,8 +34,8 @@
 
   # JavaScript
 
-    ExpiresByType application/javascript                "access plus 600 seconds"
-    ExpiresByType application/x-javascript              "access plus 600 seconds"
+    ExpiresByType application/javascript                "access plus 7200 seconds"
+    ExpiresByType application/x-javascript              "access plus 7200 seconds"
     ExpiresByType text/javascript                       "access plus 600 seconds"
 
 
