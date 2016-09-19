@@ -7,12 +7,16 @@
 <meta name="keywords" content="ncrtma, india, college,conference, maths conference, national conference, students, fest, madras, chennai, biggest conference,NCRTMA 2017, ncrtma 2017, 2017, call for paper, ncrtma16, national maths conference, mathematics, global, tamil nadu"> 
 <meta name="author" content="Khagendra Kumar and Harshit Soni">
 <title>NCRTMA| SRM University </title>
-<noscript id="deferred-styles">
-	<link rel="stylesheet" type="text/css" href="style.css"/>
+	  <link rel="stylesheet" type="text/css" href="style.css"/>
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" async/>
+	  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" async/>
+	  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Aref+Ruqaa|Lato|Pacifico|Roboto+Slab" async/>
+<!--<noscript id="deferred-styles">
+	  <link rel="stylesheet" type="text/css" href="style.css"/>
       <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
 	  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
 	  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Aref+Ruqaa|Lato|Pacifico|Roboto+Slab"/>
-    </noscript>
+    </noscript>-->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -26,7 +30,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <link rel="shortcut icon" type="image/ico" href="faviconone.ico" />
-    <script>
+    <!--<script>
       var loadDeferredStyles = function() {
         var addStylesNode = document.getElementById("deferred-styles");
         var replacement = document.createElement("div");
@@ -38,7 +42,7 @@
           webkitRequestAnimationFrame || msRequestAnimationFrame;
       if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
       else window.addEventListener('load', loadDeferredStyles);
-    </script>
+    </script>-->
 </head>
 
 <body>
@@ -80,7 +84,12 @@
         </div>
     </div>
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<noscript id="deferred-styles">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"as></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.countdown.min.js"></script>
+    </noscript>-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"as></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/jquery.countdown.min.js"></script>
 <script type="text/javascript">
@@ -103,5 +112,18 @@ if ($('#countdown').length) {
 		}
 
 </script>
+<script>
+      var loadDeferredStyles = function() {
+        var addStylesNode = document.getElementById("deferred-styles");
+        var replacement = document.createElement("div");
+        replacement.innerHTML = addStylesNode.textContent;
+        document.body.appendChild(replacement)
+        addStylesNode.parentElement.removeChild(addStylesNode);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+          webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+      else window.addEventListener('load', loadDeferredStyles);
+    </script>
 </body>
 </html>
