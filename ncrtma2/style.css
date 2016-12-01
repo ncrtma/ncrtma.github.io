@@ -54,6 +54,12 @@ body{
 #about{
     background-color:rgb(175, 122, 197);
 }
+#contact{
+	background-color:rgba(45, 15, 179, 0.9);
+}
+#footer{
+	background-color:black;
+}
 td{
     color:black;
 }
