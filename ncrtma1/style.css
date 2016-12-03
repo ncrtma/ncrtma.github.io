@@ -12,6 +12,9 @@ body {
   .navbar {
       margin-bottom: 0px;
   }
+.container-fluid{
+    padding-top:10px;
+}
   
   .affix ~ .container-fluid {
      position: relative;
@@ -24,4 +27,17 @@ body {
 }
 .footer td{
     color:white;
+}
+#team{
+    text-align:center;
+    padding:4px 4px 4px 4px;
+}
+.footer a{
+    text-decoration:none;
+    color:white;
+    ho
+}
+.footer a:hover{
+    color:white;
+    text-decoration:none;
 }
