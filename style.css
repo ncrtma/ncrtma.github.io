@@ -44,3 +44,6 @@ body {
 p{
     text-align:justify;
 }
+#patron p{
+	text-align:center;
+}
