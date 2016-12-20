@@ -44,6 +44,12 @@ body {
 p{
     text-align:justify;
 }
+a:hover{
+    text-decoration:none;    
+}
 #patron p{
 	text-align:center;
+}
+#news ul {
+    color: red;
 }
