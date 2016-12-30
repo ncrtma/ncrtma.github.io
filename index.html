@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="../compiled/flipclock.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="../compiled/flipclock.js"></script>
     
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 <link rel="shortcut icon" type="image/ico" href="/faviconone.ico" />
@@ -61,6 +64,21 @@
             </div>
             </div>
     </nav>
+    <div class="container-fluid" id="video1">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="clock" id="time"></div>
+                </div>
+                <div class="col-sm-6">
+                    <center>
+                        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/V7pGTDF4dbA" frameborder="0" allowfullscreen></iframe>
+                    </center>
+                </div>
+           </div>
+        </div>
+    </div>
+    <hr />
     <div style="padding-bottom:10px;" class="container-fluid">
         <div class="row">
             <div class="col-sm-3">
@@ -119,7 +137,7 @@
                 <h4>Latest News</h4>
                     <div class="container-fluid" id="news">
                         <ul>
-                             <marquee direction="up"><li>1.Last Date for submission of abstract has been extended to 11/01/2017 and submission of full paper has been extended to 25/01/2017.</li></marquee>
+                             <marquee direction="up" scrollamount="4"><li>1.Last Date for submission of abstract has been extended to 11/01/2017 and submission of full paper has been extended to 25/01/2017.</li></marquee>
                         </ul>
                     </div>
                     <hr/>
@@ -152,8 +170,42 @@
             <p style="text-align:center">2016 - 2017 © myhackerworld.com | Designed By Khagendra Kumar &  Harshit Soni</p>
         </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
     <script src="assets/bootstrap.min.js"></script>
+    <script type="text/javascript">
+			var clock;
+
+			$(document).ready(function() {
+				// Set dates.
+				var futureDate  = new Date("February 24, 2017 09:00 PM EDT");
+				var currentDate = new Date();
+
+				// Calculate the difference in seconds between the future and current date
+				var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
+
+				// Calculate day difference and apply class to .clock for extra digit styling.
+				function dayDiff(first, second) {
+					return (second-first)/(1000*60*60*24);
+				}
+
+				if (dayDiff(currentDate, futureDate) < 100) {
+					$('.clock').addClass('twoDayDigits');
+				} else {
+					$('.clock').addClass('threeDayDigits');
+				}
+
+				if(diff < 0) {
+					diff = 0;
+				}
+
+				// Instantiate a coutdown FlipClock
+				clock = $('.clock').FlipClock(diff, {
+					clockFace: 'DailyCounter',
+					countdown: true,
+				});
+			});
+    </script>
+
     <script>
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();

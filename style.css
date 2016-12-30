@@ -1,7 +1,7 @@
 @import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
 body {
       position: relative; 
-      background-color:rgb(247, 249, 249)
+      background-color:white;/*rgb(247, 249, 249)*/
   }
 
   .affix {
@@ -52,4 +52,14 @@ a:hover{
 }
 #news ul {
     color: red;
+}
+#video{
+    background-position-x:center;
+    box-shadow: 2px 2px 20px 2px #888888;
+}
+hr{
+    box-shadow: 2px 2px 1px 1px #888888;    
+}
+#time{
+    margin-top:6vw;
 }
